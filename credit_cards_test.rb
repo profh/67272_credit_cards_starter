@@ -33,16 +33,16 @@ class TestCreditCards < Minitest::Test
   # Create some valid cards and identify them by their abbreviation
   def test_card_identification
     create_valid_cards
-    assert_equal("VISA", @visa13.type.name)
-    assert_equal("VISA", @visa16.type.name)
-    assert_equal("MC", @mc51.type.name)
-    assert_equal("MC", @mc54.type.name)
-    assert_equal("DISC", @disc65.type.name)
-    assert_equal("DISC", @disc6011.type.name)
-    assert_equal("DCCB", @dccb300.type.name)
-    assert_equal("DCCB", @dccb303.type.name)
-    assert_equal("AMEX", @amex34.type.name)
-    assert_equal("AMEX", @amex37.type.name)
+    assert_equal("VISA", @visa13.type)
+    assert_equal("VISA", @visa16.type)
+    assert_equal("MC", @mc51.type)
+    assert_equal("MC", @mc54.type)
+    assert_equal("DISC", @disc65.type)
+    assert_equal("DISC", @disc6011.type)
+    assert_equal("DCCB", @dccb300.type)
+    assert_equal("DCCB", @dccb303.type)
+    assert_equal("AMEX", @amex34.type)
+    assert_equal("AMEX", @amex37.type)
   end
   
   # Create some invalid card lengths and then test
