@@ -48,6 +48,10 @@
   require 'rubygems'
   require 'date'
   require 'time'
+  
+# Next, we are giving you a CreditCardType class that can be helpful
+# to you; see the file credit_card_type.rb for details and comments.
+  require './credit_card_type'
 
 # Now your solution goes here...
 
