@@ -40,6 +40,6 @@ module CreditCardContext
   
   def create_invalid_card_dates
     @last_year = CreditCard.new(4123456789012345, 2017, 12)
-    @last_month = CreditCard.new(4123456789012345, 2018, 09)
+    @last_month = CreditCard.new(4123456789012345, 2018, 9)
   end
 end
