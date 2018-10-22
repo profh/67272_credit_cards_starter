@@ -11,7 +11,7 @@ module CreditCardContext
     @dccb303 = CreditCard.new(30312345678901, 2018, 12)
     @amex34 = CreditCard.new(341234567890123, 2018, 12)
     @amex37 = CreditCard.new(371234567890123, 2018, 12)
-    @current_month = CreditCard.new(371234567890123, 2018, 03)
+    @current_month = CreditCard.new(371234567890123, 2018, 10)
   end
   
   def create_invalid_card_lengths
@@ -40,6 +40,6 @@ module CreditCardContext
   
   def create_invalid_card_dates
     @last_year = CreditCard.new(4123456789012345, 2017, 12)
-    @last_month = CreditCard.new(4123456789012345, 2018, 02)
+    @last_month = CreditCard.new(4123456789012345, 2018, 09)
   end
 end
